@@ -10,7 +10,7 @@
   URL: http://code.google.com/p/html5slides/
 */
 
-var PERMANENT_URL_PREFIX = 'http://html5slides.googlecode.com/svn/trunk/';
+var PERMANENT_URL_PREFIX = 'file:///Users/chenpierr/Developer/work/rssReader/';
 
 var SLIDE_CLASSES = ['far-past', 'past', 'current', 'next', 'far-next'];
 
@@ -175,7 +175,8 @@ function updateSlides() {
         updateSlideClass(i, 'far-past');
         break;
       case curSlide - 1:
-        updateSlideClass(i, 'past');
+        //I want to hide the past & next
+		updateSlideClass(i, 'past');
         break;
       case curSlide: 
         updateSlideClass(i, 'current');
