@@ -1,8 +1,7 @@
-bplist00—_WebMainResource’	
-_WebResourceFrameName^WebResourceURL_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingNameP_5http://html5slides.googlecode.com/svn/trunk/slides.jsO:ñ<html><head></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">/*
+/*
   Google HTML5 slides template
 
-  Authors: Luke Mah√É¬© (code)
+  Authors: Luke MahÃ© (code)
            Marcin Wichary (code and design)
 
            Dominic Mazzoni (browser compatibility)
@@ -23,7 +22,7 @@ var curSlide;
 /* classList polyfill by Eli Grey 
  * (http://purl.eligrey.com/github/classList.js/blob/master/classList.js) */
 
-if (typeof document !== "undefined" &amp;&amp; !("classList" in document.createElement("a"))) {
+if (typeof document !== "undefined" && !("classList" in document.createElement("a"))) {
 
 (function (view) {
 
@@ -36,8 +35,8 @@ var
     return this.replace(/^\s+|\s+$/g, "");
   }
   , arrIndexOf = Array[protoProp].indexOf || function (item) {
-    for (var i = 0, len = this.length; i &lt; len; i++) {
-      if (i in this &amp;&amp; this[i] === item) {
+    for (var i = 0, len = this.length; i < len; i++) {
+      if (i in this && this[i] === item) {
         return i;
       }
     }
@@ -69,7 +68,7 @@ var
         trimmedClasses = strTrim.call(elem.className)
       , classes = trimmedClasses ? trimmedClasses.split(/\s+/) : []
     ;
-    for (var i = 0, len = classes.length; i &lt; len; i++) {
+    for (var i = 0, len = classes.length; i < len; i++) {
       this.push(classes[i]);
     }
     this._updateClassName = function () {
@@ -144,7 +143,7 @@ if (objCtr.defineProperty) {
 /* Slide movement */
 
 function getSlideEl(no) {
-  if ((no &lt; 0) || (no &gt;= slideEls.length)) { 
+  if ((no < 0) || (no >= slideEls.length)) { 
     return null;
   } else {
     return slideEls[no];
@@ -170,7 +169,7 @@ function updateSlideClass(slideNo, className) {
 };
 
 function updateSlides() {
-  for (var i = 0; i &lt; slideEls.length; i++) {
+  for (var i = 0; i < slideEls.length; i++) {
     switch (i) {
       case curSlide - 2:
         updateSlideClass(i, 'far-past');
@@ -228,7 +227,7 @@ function buildNextItem() {
 };
 
 function prevSlide() {
-  if (curSlide &gt; 0) {
+  if (curSlide > 0) {
     curSlide--;
 
     updateSlides();
@@ -240,7 +239,7 @@ function nextSlide() {
     return;
   }
 
-  if (curSlide &lt; slideEls.length - 1) {
+  if (curSlide < slideEls.length - 1) {
     curSlide++;
 
     updateSlides();
@@ -301,7 +300,7 @@ function handleTouchStart(event) {
 };
 
 function handleTouchMove(event) {
-  if (event.touches.length &gt; 1) {
+  if (event.touches.length > 1) {
     cancelTouch();
   } else {
     touchDX = event.touches[0].pageX - touchStartX;
@@ -313,8 +312,8 @@ function handleTouchEnd(event) {
   var dx = Math.abs(touchDX);
   var dy = Math.abs(touchDY);
 
-  if ((dx &gt; PM_TOUCH_SENSITIVITY) &amp;&amp; (dy &lt; (dx * 2 / 3))) {
-    if (touchDX &gt; 0) {
+  if ((dx > PM_TOUCH_SENSITIVITY) && (dy < (dx * 2 / 3))) {
+    if (touchDX > 0) {
       prevSlide();
     } else {
       nextSlide();
@@ -362,7 +361,7 @@ function disableFrame(frame) {
 function enableFrame(frame) {
   var src = frame._src;
 
-  if (frame.src != src &amp;&amp; src != 'about:blank') {
+  if (frame.src != src && src != 'about:blank') {
     frame.src = src;
   }
 };
@@ -573,7 +572,7 @@ function addGeneralStyle() {
 
 function makeBuildLists() {
   for (var i = curSlide, slide; slide = slideEls[i]; i++) {
-    var items = slide.querySelectorAll('.build &gt; *');
+    var items = slide.querySelectorAll('.build > *');
     for (var j = 0, item; item = items[j]; j++) {
       if (item.classList) {
         item.classList.add('to-build');
@@ -583,7 +582,7 @@ function makeBuildLists() {
 };
 
 function handleDomLoaded() {
-  slideEls = document.querySelectorAll('section.slides &gt; article');
+  slideEls = document.querySelectorAll('section.slides > article');
 
   setupFrames();
 
@@ -615,7 +614,7 @@ function initialize() {
 }
 
 // If ?debug exists then load the script relative instead of absolute
-if (!window['_DEBUG'] &amp;&amp; document.location.href.indexOf('?debug') !== -1) {
+if (!window['_DEBUG'] && document.location.href.indexOf('?debug') !== -1) {
   document.addEventListener('DOMContentLoaded', function() {
     // Avoid missing the DomContentLoaded event
     window['_DCL'] = true
@@ -633,4 +632,3 @@ if (!window['_DEBUG'] &amp;&amp; document.location.href.indexOf('?debug') !== -1
 } else {
   initialize();
 }
-</pre></body></html>Ztext/plainUUTF-8    ( ? N ` v î ï Õ;g;r                           ;x
