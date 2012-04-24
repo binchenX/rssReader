@@ -604,7 +604,7 @@ function initialize() {
   getCurSlideFromHash();
 
   if (window['_DEBUG']) {
-    PERMANENT_URL_PREFIX = '../';
+    //PERMANENT_URL_PREFIX = '../';
   }
 
   if (window['_DCL']) {
