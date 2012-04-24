@@ -1,7 +1,7 @@
-                  /*
+/*
   Google HTML5 slides template
 
-  Authors: Luke MahÃ© (code)
+  Authors: Luke Mahé (code)
            Marcin Wichary (code and design)
            
            Dominic Mazzoni (browser compatibility)
@@ -385,7 +385,7 @@ li {
   margin-bottom: .5em;
 }
 li::before {
-  content: 'Â·';
+  content: '·';
 
   width: .75em;
   margin-left: -.75em;
@@ -511,7 +511,7 @@ q {
   margin-right: 150px;    
 }
 q::before {
-  content: 'â€œ';
+  content: '“';
   
   position: absolute;
   display: inline-block;
@@ -523,7 +523,7 @@ q::before {
   color: rgb(192, 192, 192);
 }
 q::after {
-  content: 'â€';
+  content: '”';
 
   position: absolute;  
   margin-left: .1em;
@@ -539,7 +539,7 @@ div.author {
   margin-right: 150px;    
 }
 div.author::before {
-  content: 'â€”';
+  content: '—';
 }
 
 /* Size variants */
@@ -609,4 +609,4 @@ article.smaller q::after {
 .prettyprint .dec, 
 .prettyprint .var { /* a declaration; a variable name */
   color: rgb(127, 0, 127);
-}
+}  
