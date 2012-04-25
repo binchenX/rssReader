@@ -3,23 +3,34 @@
 
 <html>
   <head>
-    <title>Presentation</title>
+    <title>RSS Home</title>
 
-    <meta charset='utf-8'>
-    <script
-      src='file:///Users/chenpierr/Developer/work/rssReader/slides.js'></script>
+    <meta charset='utf-8'>               
+	<style> 
+	       .rss_cover_container { background: gray;
+					position:absolute;
+					top:100px; left:100px;
+					width:480; height:240;}
+		   .rss_cover {border-style:solid;
+					   width:120;
+					   height:120}
+		   .rss_cover_image {width:100; height:100;}
+		   #cover_1 {position:absolute;top:0px;left:0px;}  
+		   #cover_2 {position:absolute;top:0px;left:120px;} 
+	</style>
+                      
   </head>
 
 
-    <body style='display: none'>        
-		<a  href="rss_cnbeta_index.html"> <img src="images/rss_cnbeta.png" width="100" height="100">   </a>     
-		
-		<br />
-		<br />
-		<br />
-		<br />
-		
-	    <a  href="rss_ifanr_index.html"> <img src="images/rss_ifanr.png"  width="100" height="100">   </a>   
+  <body >             
+    	<div class="rss_cover_container">
+			<div class="rss_cover" id="cover_1">
+				<a  href="rss_cnbeta_index.html"> <img src="images/rss_cnbeta.png" class="rss_cover_image">   </a>  
+			</div>   
+			<div class="rss_cover" id="cover_2"> 
+	       		<a  href="rss_ifanr_index.html"> <img src="images/rss_ifanr.png" class="rss_cover_image">   </a>  
+	 		</div>       
+		</div>
 	
 	</body>
 
