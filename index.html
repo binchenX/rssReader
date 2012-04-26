@@ -6,19 +6,46 @@
     <title>RSS Home</title>
 
     <meta charset='utf-8'>               
-	<style> 
-	       .rss_cover_container { background: gray;
+	<style>                 
+	
+	
+	body {
+	  margin: 0;
+	  padding: 0;
+
+	  display: block !important;
+
+	  height: 100%;
+	  min-height: 740px;
+
+	  overflow-x: hidden;
+	  overflow-y: auto;
+
+	  background: rgb(215, 215, 215);
+	  background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+	  background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+	  background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+	  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+
+	  -webkit-font-smoothing: antialiased;
+	}
+	
+	       .rss_cover_container { 
+					background: white;      
+					border-radius:15px;
 					position:absolute;
-					top:100px; left:100px;
-					width:480; height:240;}
+					top:400px; left:300px;
+					width:900px; height:700px;}
 		   .rss_cover {border-style:solid;
-					   width:120;
-					   height:120}
-		   .rss_cover_image {width:120; height:120;}
+					   width:200px;
+					   height:350px;
+					   padding:2px;
+					   margin:5px;}
+		   .rss_cover_image {width:200px; height:350px;}
 		   #cover_1 {position:absolute;top:0px;left:0px;}  
-		   #cover_2 {position:absolute;top:0px;left:120px;}    
-		   #cover_3 {position:absolute;top:0px;left:240px;}   
-		   #cover_4 {position:absolute;top:0px;left:360px;}    		  
+		   #cover_2 {position:absolute;top:0px;left:25%;}    
+		   #cover_3 {position:absolute;top:0px;left:50%;}   
+		   #cover_4 {position:absolute;top:0px;left:75%;}    		  
 	</style>
                       
   </head>
