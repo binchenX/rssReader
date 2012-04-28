@@ -40,20 +40,26 @@ body {
 
 nav.back {
 	                  
-	width:45px;
-	height:50px;  
+	width:65px;
+	height:30px;  
 	
 	left:50%;
 	top:10%;        
 	
 	margin-left: -435px;          /*algin with left the article*/    
-	margin-top:-25px;             /*half of the height, aligin with the top of the sections/article*/
+	margin-top:-35px;             /*half of the height, aligin with the top of the sections/article*/
 	position: absolute;      
-	         
+	                                
+	
+	font-size:20px;        
+	font-family: Georgia, serif;
+	font-style: italic;
+	
 	display: block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background-color: white;
+    text-decoration: none;    
+	text-align:center;
+    padding: 7px 14px 0px 14px; 
+	background-color: white;
     text-transform: uppercase;
     box-shadow: 0 0 1px #000
 }
