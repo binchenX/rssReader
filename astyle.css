@@ -27,10 +27,13 @@ body {
 	border-radius:15px;
 	background: white;      
 	position:absolute;
-	top:400px; 
-	left:300px;
+	top:50%; 
+	left:50%;
 	width:900px; 
-	height:700px;
+	height:700px;   
+	
+	margin-left:-450px;    
+	margin-top:-350px;
  }
  
 .rss_cover {              

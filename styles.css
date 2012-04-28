@@ -35,18 +35,50 @@ body {
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
 
   -webkit-font-smoothing: antialiased;
+}        
+
+
+nav.back {
+	                  
+	width:45px;
+	height:50px;  
+	
+	left:50%;
+	top:10%;        
+	
+	margin-left: -435px;          /*algin with left the article*/    
+	margin-top:-25px;             /*half of the height, aligin with the top of the sections/article*/
+	position: absolute;      
+	         
+	display: block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background-color: white;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
 }
+         
+
+nav.back a.info:hover {
+    box-shadow: 0 0 5px #fff
+}
+
 
 .slides {
   width: 100%;
-  height: 100%;
+  height: 860px; /*same hight as the article*/
   left: 0;
-  top: 0;
+  top: 10%;
   
-  position: absolute;
+  position: absolute;       
+
+  border: 5px solid rgba(255, 0, 0, .3);    
 
   -webkit-transform: translate3d(0, 0, 0);
-}
+}            
+
+
+
 
 .slides > article {
   display: block;
@@ -55,13 +87,13 @@ body {
   overflow: hidden;
 
   width: 900px;
-  height: 700px;
+  height: 860px;
 
   left: 50%;
   top: 50%;
 
   margin-left: -450px;
-  margin-top: -350px;
+  margin-top: -430px;           /*half of the width*/
   
   padding: 40px 60px;
 
@@ -78,7 +110,7 @@ body {
   background-color: white;
 
   box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-  border: 1px solid rgba(0, 0, 0, .3);
+  border: 1px solid rgba(255, 0, 0, .3);
 
   transition: transform .3s ease-out;
   -o-transition: -o-transform .3s ease-out;
